@@ -1,4 +1,6 @@
 import React, { createContext, useReducer } from 'react';
+//import ReactDOM from 'react-dom/client';
+//import Remaining from '../components/Remaining';
 
 // 5. The reducer - this is used to update the state, based on the action
 export const AppReducer = (state, action) => {
@@ -60,6 +62,7 @@ export const AppReducer = (state, action) => {
         case 'SET_BUDGET':
             action.type = "DONE";
             state.budget = action.payload;
+            //ReactDOM.render(<Remaining />, document.getElementById("Remaining"));
 
             return {
                 ...state,
