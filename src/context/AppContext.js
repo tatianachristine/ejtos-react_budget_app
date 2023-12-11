@@ -62,7 +62,6 @@ export const AppReducer = (state, action) => {
         case 'SET_BUDGET':
             action.type = "DONE";
             state.budget = action.payload;
-            //ReactDOM.render(<Remaining />, document.getElementById("Remaining"));
 
             return {
                 ...state,
@@ -72,12 +71,12 @@ export const AppReducer = (state, action) => {
             state.currency = action.payload;
             
             return {
-                ...state
-            }
+                ...state,
+            };
 
         default:
             return state;
-    }
+    };
 };
 
 // 1. Sets the initial state when the app loads
