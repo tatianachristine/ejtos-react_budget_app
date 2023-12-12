@@ -36,13 +36,14 @@ const CurrencyType = () => {
   return (
     <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Dropdown Button
+        Currency (£ Pound)
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        <Dropdown.Item value = "$" href="dollar">$ Dollar</Dropdown.Item>
+        <Dropdown.Item value="£" href="pound">£ Pound</Dropdown.Item>
+        <Dropdown.Item value="€" href="euro">€ Euro</Dropdown.Item>
+        <Dropdown.Item value="₹" href="rupee">₹ Rupee</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
