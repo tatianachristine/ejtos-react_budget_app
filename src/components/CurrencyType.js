@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 import { AppContext } from '../context/AppContext';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const CurrencyType = () => {
     const { dispatch } = useContext(AppContext);
@@ -31,7 +32,23 @@ const CurrencyType = () => {
       
       https://blog.logrocket.com/getting-started-react-select/*/
 
+/*function BasicExample() {
+  return (
+    <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Dropdown Button
+      </Dropdown.Toggle>
 
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  );
+}
+
+export default BasicExample;*/
     return (
         <select className="alert alert-success" id="inputGroupSelect03" onChange={changeCurrency}>
             <option defaultValue>Currency (£ Pound)</option>
