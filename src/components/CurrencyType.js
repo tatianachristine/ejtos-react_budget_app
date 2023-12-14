@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { AppContext } from '../context/AppContext';
 import Dropdown from 'react-bootstrap/Dropdown';
 
