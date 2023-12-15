@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AppContext } from '../context/AppContext';
-import Dropdown from 'react-bootstrap/Dropdown';
+//import Dropdown from 'bootstrap/dist/css/bootstrap.min.css';
 
 const CurrencyType = () => {
     const { dispatch } = useContext(AppContext);
@@ -32,10 +32,10 @@ const CurrencyType = () => {
       
       https://blog.logrocket.com/getting-started-react-select/*/
 
-/*function BasicExample() {
-  return (
+
+  /*return (
     <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+      <Dropdown.Toggle variant="success" id="inputGroupSelect03" onChange={changeCurrency}>
         Currency (£ Pound)
       </Dropdown.Toggle>
 
@@ -47,11 +47,24 @@ const CurrencyType = () => {
       </Dropdown.Menu>
     </Dropdown>
   );
-}
+}*/
 
-export default BasicExample;*/
+    /*<div class="btn-group">
+        <button type="button" id= "inputGroupSelect03" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onChange={changeCurrency}>
+        Currency (£ Pound) <span class="caret"></span>
+        </button>
+        <ul class="btn btn-success dropdown-menu">
+            <li><a href="dollar">$ Dollar</a></li>
+            <li><a href="pound">£ Pound</a></li>
+            <li><a href="euro">€ Euro</a></li>
+            <li><a href="rupee">₹ Rupee</a></li>
+        </ul>
+    </div>
+  );
+}*/
+
     return (
-        <select className="alert alert-success" id="inputGroupSelect03" onChange={changeCurrency}>
+        <select className="btn btn-success" id="inputGroupSelect03" onChange={changeCurrency}>
             <option defaultValue>Currency (£ Pound)</option>
             <option value="$" name="dollar">$ Dollar</option>
             <option value="£" name="pound">£ Pound</option>
@@ -62,4 +75,3 @@ export default BasicExample;*/
     };
 
 export default CurrencyType;
-
